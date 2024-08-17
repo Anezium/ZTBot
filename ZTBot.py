@@ -21,8 +21,18 @@ class ZoneTelechargementParser:
         self._request_delay = 300  # Hardcoded delay between requests in milliseconds
 
     def _get_base_url(self):
-        return self._ZTBaseURL
+        api_url = "https://matthieuev.github.io/Zt-url-api/url.json"
+        
+        response = requests.get(api_url)
+        
+        if response.status_code == 200:
+            data = response.json()
+            self._ZTBaseURL = data.get("url", "")
+            return self._ZTBaseURL
+        else:
+            print(f"Erreur lors de la récupération de l'URL : {response.status_code}")
 
+    #duplicate mais un jour je remettrais au propre
     def update_url_from_api(self):
         api_url = "https://matthieuev.github.io/Zt-url-api/url.json"
         
