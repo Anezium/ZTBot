@@ -7,6 +7,8 @@ Basé sur le code de [Sylicium](https://github.com/Sylicium) et [matthieuEv](htt
 ## Features
 Permet de scraps les films seulement
 
+Censé update automatiquement le lien du site
+
 Les liens affichés sont les liens dl-protect
 
 
