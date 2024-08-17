@@ -16,4 +16,4 @@ Les liens affichés sont les liens dl-protect
 ## Usage
 /ztsearch nom-du-film
 
-![Exemple](https://github.com/Anezium/ZTBot/blob/master/Exemple.png)
+![Exemple](https://github.com/Anezium/ZTBot/blob/master/Exemple-zt.png)
